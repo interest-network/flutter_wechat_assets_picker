@@ -182,7 +182,7 @@ class AssetPicker extends StatelessWidget {
         );
         final List<AssetEntity> result = await Navigator.of(
           context,
-          rootNavigator: false,
+          rootNavigator: true,
         ).push<List<AssetEntity>>(
           SlidePageTransitionBuilder<List<AssetEntity>>(
             builder: picker,
